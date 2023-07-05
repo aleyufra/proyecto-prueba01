@@ -7,7 +7,7 @@ usuarioCtrl.createUsuario = async (req, res)=>{ //en req.body se espera que veng
       await usuario.save(); 
       res.status(200).json({ 
          'status': '1', 
-         'msg': 'Usuario guardado.' 
+         'msg': 'Usuario creado correctamente.' 
       }) 
    } catch (error) { 
       res. status(400).json({ 
