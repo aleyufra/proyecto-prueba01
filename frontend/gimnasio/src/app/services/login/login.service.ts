@@ -25,6 +25,7 @@ export class LoginService {
     return this._http.post(this.urlBase + 'login', body, httpOptions);
   }
 
+  
   public logout() { //borro el vble almacenado mediante el storage 
     sessionStorage.removeItem("user");
     sessionStorage.removeItem("perfil");

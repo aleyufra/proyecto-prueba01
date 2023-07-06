@@ -29,7 +29,7 @@ usuarioCtrl.loginUsuario = async (req, res) => { //en req.body se espera que ven
       if (!user) { 
          res.json({ 
             status: 0, 
-            msg: "not found" 
+            msg: "el usuario o contraseña son incorrectas" 
          }) 
       } else { 
          res.json({ 
@@ -43,7 +43,7 @@ usuarioCtrl.loginUsuario = async (req, res) => { //en req.body se espera que ven
    } catch (error) { 
       res.json({ 
          status: 0,
-         msg: 'error' 
+         msg: 'error con la api login' 
       }) 
    } 
 }
